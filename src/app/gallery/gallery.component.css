@@ -1,0 +1,58 @@
+
+.panel-heading{
+	background-color: #8e9ad4;
+	border-color:#7986cb;
+}
+.btn-primary{
+	background-color:#7986cb ! important;
+}
+
+p {
+	text-align: left;
+	margin-left: 12px;
+}
+
+input{
+	margin: 5px 5px;
+}
+
+.cadre{
+	height: 314px;
+}
+img{
+	height: 150px;
+	width: 150px;
+	margin: 55px 5px;
+}
+
+.separate {
+	border-collapse: separate;
+  }
+  
+  table {
+	display: inline-table; 
+	margin: 2em;
+	border: solid 3px;
+	border-color: transparent;
+	border-spacing: 6px;
+}
+ 
+  
+  
+   td {
+	border: solid 2px;
+	height: 6px;
+	width: fit-content;
+  }
+   #owner{
+	   border:transparent;
+	   width: max-content;
+   }
+  .fx, .gk { border-color: orange ;		}
+  
+  .pagination{
+	  background-color: none;
+  }
+  .clickable{
+	  cursor: pointer;
+  }

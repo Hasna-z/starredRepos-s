@@ -1,0 +1,44 @@
+<div class="container">
+
+	<div class="panel panel-primary">
+		<div class="panel-heading"> trending Repositories</div>
+		<div class="panel-body">
+			<p><strong>Most starred Github repos created in the last 30 days</strong></p>
+			<button (click)="getRepos()" type="submit" class="btn btn-primary" >GetRepos</button>
+
+				<div *ngFor="let p of repoItems?.items" class="col-sm-9">
+					<div class="panel panel-primary cadre">
+						<div class="panel-heading"></div>
+						<div class="panel-body">
+							<div class="col-sm-3">
+								<img src="{{p.owner.avatar_url}}">
+							</div>
+							<div class="col-sm-9"> 
+								<h2> {{p.name}}</h2>
+								<p > {{p.description}} for everyone {{p.url}}</p>
+								<table class="separate">	
+									<tbody>
+									<tr><td class="fx">stars:{{p.stargazers_count}} </td> 
+										<td class="gk">Issues:{{p.open_issues_count}} </td>
+										<td id="owner">submited 30 days ago by {{p.owner.login}}</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+			
+	</div>
+	<div class="row">
+		<ul class="nav nav-pills">
+			<li ngClass="{'active':currentPage==(i+1)}" class="clickable" *ngFor="let page of pages; let i=index">
+				<a (click)="goToPage(i)" >{{i}}</a>
+			</li>
+		</ul>
+	</div>
+</div>	
+	
+

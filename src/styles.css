@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    
+   
+    background: linear-gradient(90deg, rgb(190 190 204) 0%, #f3e5f5 35%, #f3e5f5 100%);
+        
+}
+        
+.panel-body{
+    background: #f3e5f5 35%;    
+}
+        
